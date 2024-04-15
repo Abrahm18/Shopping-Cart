@@ -39,9 +39,9 @@
     <div class="card">
         <img 
         title="God oF War"
-        class="card-img-top" src="https://images.gog-statics.com/373a2f94eb35e1fb653999a3620c78d94f17d9db50191596a61c8a566374e3b7_product_card_v2_mobile_slider_639.jpg" alt="Juego">
+        class="card-img-top" src="https://mundogamervenezuela.com/cdn/shop/products/image.png?v=1668794636" alt="Juego">
         <div class="card-body">
-            <span>God of War Game for PS5</span>
+            <span>God of War Game for PS4</span>
             <h5 class="card-title">$95</h5>
             <p class="card-text">descripcion</p>
             <button class="btn btn-primary" 
@@ -54,10 +54,26 @@
     <div class="col-3">
     <div class="card">
         <img 
-        title="God oF War"
-        class="card-img-top" src="https://images.gog-statics.com/373a2f94eb35e1fb653999a3620c78d94f17d9db50191596a61c8a566374e3b7_product_card_v2_mobile_slider_639.jpg" alt="Juego">
+        title="GTA V"
+        class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxm6lgnbGBzdSE-Nm7XZFTeE8Kp1jiLs5BFg&usqp=CAU" alt="Juego">
         <div class="card-body">
-            <span>God of War Game for PS5</span>
+            <span>GTA V for PS5</span>
+            <h5 class="card-title">$60</h5>
+            <p class="card-text">descripcion</p>
+            <button class="btn btn-primary" 
+            type="submit" 
+            name="btnAccion" 
+            value="Agregar" >Add to cart</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-3">
+    <div class="card">
+        <img 
+        title="Call Of Duty Warzone"
+        class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ojcFWvQvkXV4moXvW7IIcpxfQfcV6gEm0Es304nuuq4w5ppWiRiUCEVC2ccxhqQWc-0&usqp=CAU" alt="Juego">
+        <div class="card-body">
+            <span>Call Of Duty Warzone for Pc</span>
             <h5 class="card-title">$95</h5>
             <p class="card-text">descripcion</p>
             <button class="btn btn-primary" 
