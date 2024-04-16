@@ -1,3 +1,9 @@
+<?php
+include 'global/config.php';
+include 'global/conexion.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,10 +45,10 @@
     <div class="card">
         <img 
         title="God oF War"
-        class="card-img-top" src="https://mundogamervenezuela.com/cdn/shop/products/image.png?v=1668794636" alt="Juego">
+        class="card-img-top" src="https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png" alt="Juego">
         <div class="card-body">
             <span>God of War Game for PS4</span>
-            <h5 class="card-title">$95</h5>
+            <h5 class="card-title">$70</h5>
             <p class="card-text">descripcion</p>
             <button class="btn btn-primary" 
             type="submit" 
@@ -55,7 +61,7 @@
     <div class="card">
         <img 
         title="GTA V"
-        class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxm6lgnbGBzdSE-Nm7XZFTeE8Kp1jiLs5BFg&usqp=CAU" alt="Juego">
+        class="card-img-top" src="https://cdn.bynogame.com/games/gta5-1662829149472.webp" alt="Juego">
         <div class="card-body">
             <span>GTA V for PS5</span>
             <h5 class="card-title">$60</h5>
@@ -71,7 +77,7 @@
     <div class="card">
         <img 
         title="Call Of Duty Warzone"
-        class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ojcFWvQvkXV4moXvW7IIcpxfQfcV6gEm0Es304nuuq4w5ppWiRiUCEVC2ccxhqQWc-0&usqp=CAU" alt="Juego">
+        class="card-img-top" src="https://i.blogs.es/84e1f8/ftiepigx0ayfmt4/450_1000.webp" alt="Juego">
         <div class="card-body">
             <span>Call Of Duty Warzone for Pc</span>
             <h5 class="card-title">$95</h5>
@@ -86,10 +92,42 @@
     <div class="col-3">
     <div class="card">
         <img 
-        title="God oF War"
-        class="card-img-top" src="https://images.gog-statics.com/373a2f94eb35e1fb653999a3620c78d94f17d9db50191596a61c8a566374e3b7_product_card_v2_mobile_slider_639.jpg" alt="Juego">
+        title="Mortal Kombat 11 "
+        class="card-img-top" src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00088392966954l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Juego">
         <div class="card-body">
-            <span>God of War Game for PS5</span>
+            <span>Mortal Kombat 11 for XBOX ONE</span>
+            <h5 class="card-title">$75</h5>
+            <p class="card-text">descripcion</p>
+            <button class="btn btn-primary" 
+            type="submit" 
+            name="btnAccion" 
+            value="Agregar" >Add to cart</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-3">
+    <div class="card">
+        <img 
+        title="FIFA 23"
+        class="card-img-top" src="https://www.shoppingchina.com.py/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNXJ5QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ccad0c1455bab5e11cd44be3adc894f9d1aea96f/836198.jpg" alt="Juego">
+        <div class="card-body">
+            <span>FIFA 23 for PS4</span>
+            <h5 class="card-title">$80</h5>
+            <p class="card-text">descripcion</p>
+            <button class="btn btn-primary" 
+            type="submit" 
+            name="btnAccion" 
+            value="Agregar" >Add to cart</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-3">
+    <div class="card">
+        <img 
+        title="Spider-Man"
+        class="card-img-top" src="https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png" alt="Juego">
+        <div class="card-body">
+            <span>Spider-Man for PS4</span>
             <h5 class="card-title">$95</h5>
             <p class="card-text">descripcion</p>
             <button class="btn btn-primary" 
@@ -102,11 +140,11 @@
     <div class="col-3">
     <div class="card">
         <img 
-        title="God oF War"
-        class="card-img-top" src="https://images.gog-statics.com/373a2f94eb35e1fb653999a3620c78d94f17d9db50191596a61c8a566374e3b7_product_card_v2_mobile_slider_639.jpg" alt="Juego">
+        title="Dragon Ball Kakarot"
+        class="card-img-top" src="https://image.api.playstation.com/vulcan/ap/rnd/202302/2107/4f15fe511e0062262a894493e6dcdbee2f615abb4024b384.png" alt="Juego">
         <div class="card-body">
-            <span>God of War Game for PS5</span>
-            <h5 class="card-title">$95</h5>
+            <span>Dragon Ball Z Kakarot for PS4</span>
+            <h5 class="card-title">$100</h5>
             <p class="card-text">descripcion</p>
             <button class="btn btn-primary" 
             type="submit" 
@@ -118,43 +156,11 @@
     <div class="col-3">
     <div class="card">
         <img 
-        title="God oF War"
-        class="card-img-top" src="https://images.gog-statics.com/373a2f94eb35e1fb653999a3620c78d94f17d9db50191596a61c8a566374e3b7_product_card_v2_mobile_slider_639.jpg" alt="Juego">
+        title="MLB The Show 23"
+        class="card-img-top" src="https://sm.ign.com/ign_latam/cover/m/mlb-the-sh/mlb-the-show-23_vyhz.jpg" alt="Juego">
         <div class="card-body">
-            <span>God of War Game for PS5</span>
-            <h5 class="card-title">$95</h5>
-            <p class="card-text">descripcion</p>
-            <button class="btn btn-primary" 
-            type="submit" 
-            name="btnAccion" 
-            value="Agregar" >Add to cart</button>
-        </div>
-    </div>
-    </div>
-    <div class="col-3">
-    <div class="card">
-        <img 
-        title="God oF War"
-        class="card-img-top" src="https://images.gog-statics.com/373a2f94eb35e1fb653999a3620c78d94f17d9db50191596a61c8a566374e3b7_product_card_v2_mobile_slider_639.jpg" alt="Juego">
-        <div class="card-body">
-            <span>God of War Game for PS5</span>
-            <h5 class="card-title">$95</h5>
-            <p class="card-text">descripcion</p>
-            <button class="btn btn-primary" 
-            type="submit" 
-            name="btnAccion" 
-            value="Agregar" >Add to cart</button>
-        </div>
-    </div>
-    </div>
-    <div class="col-3">
-    <div class="card">
-        <img 
-        title="God oF War"
-        class="card-img-top" src="https://images.gog-statics.com/373a2f94eb35e1fb653999a3620c78d94f17d9db50191596a61c8a566374e3b7_product_card_v2_mobile_slider_639.jpg" alt="Juego">
-        <div class="card-body">
-            <span>God of War Game for PS5</span>
-            <h5 class="card-title">$95</h5>
+            <span>MLB The Show 23 for PS4</span>
+            <h5 class="card-title">$90</h5>
             <p class="card-text">descripcion</p>
             <button class="btn btn-primary" 
             type="submit" 
