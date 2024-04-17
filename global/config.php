@@ -1,7 +1,7 @@
 <?php
- define("SERVIDOR","localhost");
- define("USUARIO","root");
- define("PASSWORD","");
- define("BD","Shopping-Cart");
+define("SERVIDOR","localhost");
+define("USUARIO","root");
+define("PASSWORD","");
+define("BD","shopping-cart");
 
 ?>
