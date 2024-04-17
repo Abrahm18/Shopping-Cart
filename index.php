@@ -43,7 +43,7 @@ include 'global/conexion.php';
 </div>    
 <div class="row">
     <?php
-        $sentencia=$pdo->prepare("SELECT * FROM 'tblproductos'");
+        $sentencia=$pdo->prepare("SELECT * FROM `tblproductos`");
         $sentencia->execute();
         $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
         print_r($listaProductos);
@@ -52,7 +52,7 @@ include 'global/conexion.php';
 
     <?php } ?>     
 
-    <div class="col-3">
+       <div class="col-3">
     <div class="card">
         <img 
         title="God oF War"
