@@ -41,6 +41,16 @@ include 'global/conexion.php';
     <a href="#" class="badge badge-sucess">ver carrito</a>  
 </div>    
 <div class="row">
+    <?php
+        $sentencia=$pdo->prepare("SELECT * FROM 'tblproductos'");
+        $sentencia->execute();
+        $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
+        print_r($listaProductos);
+    ?>
+    <?php foreach($listaProductos as $producto){ ?>
+
+    <?php } ?>     
+
     <div class="col-3">
     <div class="card">
         <img 
@@ -169,7 +179,73 @@ include 'global/conexion.php';
         </div>
     </div>
     </div>
+    <div class="col-3">
+    <div class="card">
+        <img 
+        title="Resident Evil 4 Remake"
+        class="card-img-top" src="https://gamer4ever.com.co/cdn/shop/products/013388937134_001.jpg?v=1679414664" alt="Juego">
+        <div class="card-body">
+            <span>Resident Evil 4 Remake for PS4</span>
+            <h5 class="card-title">$40</h5>
+            <p class="card-text">descripcion</p>
+            <button class="btn btn-primary" 
+            type="submit" 
+            name="btnAccion" 
+            value="Agregar" >Add to cart</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-3">
+    <div class="card">
+        <img 
+        title="Spider Man Miles Morales"
+        class="card-img-top" src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png" alt="Juego">
+        <div class="card-body">
+            <span>Spider Man Miles Morales for PS4</span>
+            <h5 class="card-title">$60</h5>
+            <p class="card-text">descripcion</p>
+            <button class="btn btn-primary" 
+            type="submit" 
+            name="btnAccion" 
+            value="Agregar" >Add to cart</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-3">
+    <div class="card">
+        <img 
+        title="Farcry 4"
+        class="card-img-top" src="https://image.api.playstation.com/vulcan/img/cfn/113076px2b27B2ofcw5IzONcQEr6vlx2oSWvfJEutr9o7jAcP9vbVFjtbYjYoX2MOkkuepqwRRkk8Krf08MR2BKeTPw-FyY7.png" alt="Juego">
+        <div class="card-body">
+            <span>Farcry 4 for PS4</span>
+            <h5 class="card-title">$60</h5>
+            <p class="card-text">descripcion</p>
+            <button class="btn btn-primary" 
+            type="submit" 
+            name="btnAccion" 
+            value="Agregar" >Add to cart</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-3">
+    <div class="card">
+        <img 
+        title="Drago Ball Xenoverse 2"
+        class="card-img-top" src="https://image.api.playstation.com/cdn/UP0700/CUSA05350_00/9EuQOvMm46H85n6DApEYTsaKob8jd1VK.png" alt="Juego">
+        <div class="card-body">
+            <span>Dragon Ball Xenoverse 2 for PS4</span>
+            <h5 class="card-title">$45</h5>
+            <p class="card-text">descripcion</p>
+            <button class="btn btn-primary" 
+            type="submit" 
+            name="btnAccion" 
+            value="Agregar" >Add to cart</button>
+        </div>
+    </div>
+    </div>
+
 </div>
 </div>
+
 </body>
 </html>

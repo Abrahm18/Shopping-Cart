@@ -7,7 +7,7 @@ try{
                   array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES uft8")
            );
 
-    echo"<script>alert('Conectado...')</script>";
+           echo"<script>alert('Conectado...')</script>";
 
 }catch(PDOException $e){
 
