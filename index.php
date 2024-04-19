@@ -7,10 +7,11 @@ include 'templates/cabecera.php';
 ?>
 
 <br>
-<div class="alert alert-primary" role="alert">
-   <?php echo $mensaje;?>
+<div class="alert alert-success" role="alert">
+   <?php echo ($mensaje);?>
+   
 
-    <a href="#" class="badge badge-sucess">ver carrito</a>  
+    <a href="#" class="btn btn-success">ver carrito</a>  
 </div>    
 <div class="row">
     <?php
