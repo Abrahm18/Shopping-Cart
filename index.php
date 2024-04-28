@@ -7,12 +7,16 @@ include 'templates/cabecera.php';
 ?>
 
 <br>
+<?php if($mensaje!=""){?>
 <div class="alert alert-success" role="alert">
    <?php echo ($mensaje);?>
    
 
-    <a href="#" class="btn btn-success">ver carrito</a>  
-</div>    
+    <a href="mostrarCarrito.php" class="btn btn-success">ver carrito</a>  
+</div>
+
+<?php }?>
+
 <div class="row">
     <?php
         $sentencia=$pdo->prepare("SELECT * FROM `tblproductos`");
