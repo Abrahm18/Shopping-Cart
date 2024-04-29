@@ -1,42 +1,43 @@
-![](https://img.shields.io/badge/Uneweb-blue)
+![]()
 
-#Shopping-Cars
+# Project Name
 
-> escribimos algo 
+> One paragraph statement about the project.
 
-![screenshot]()
+![screenshot](./app_screenshot.png)
 
- escribimos algo
+Additional description about the project and its features.
 
-## Built with
+## Built With
 
-- php
-- VSCode
-- Git Bash
+- Major languages
+- Frameworks
+- Technologies used
 
 ## Live Demo
 
-[Live Demo Link](montarlo)
+[Live Demo Link]()
 
 
-## Starting
+## Getting Started
 
-**here you will learn a little about what flebox is, it will be from one moment to the next it will be difficult you will see why I say it**
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 
-To get a local copy up and running, follow these simple example steps.
+To get a local copy up and running follow these simple example steps.
 
-### Previous requirements
+### Prerequisites
 
-### Setting
+### Setup
 
 ### Install
 
-### Use
+### Usage
 
 ### Run tests
 
-### Implementation
+### Deployment
 
 
 
@@ -44,23 +45,23 @@ To get a local copy up and running, follow these simple example steps.
 
 👤 **Abraham Nazareth Hidalgo Sanoja**
 
-- GitHub: [@abrahm18](https://github.com/abrahm18)
-
+- GitHub: [@Eltorretaz](https://github.com/Abrahm18)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check out the [issues page](https://github.com/Abrahm18/odin-recipes/issues).
+Feel free to check the [issues page](https://github.com/Eltorretaz/Simple_Shopping_Cart_PHP_Mysql_armando_3feb2024/issues).
 
 ## Show your support
 
-Give it a ⭐️ if you like this project!
+Give a ⭐️ if you like this project!
 
-## Thanks
+## Acknowledgments
 
-- I thank Google for giving me the information I needed to carry out this project.
-- I thank my partner Daniel who helped me complete my project and for teaching me some tricks
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 ## 📝 License
 
