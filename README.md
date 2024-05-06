@@ -45,13 +45,13 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Abraham Nazareth Hidalgo Sanoja**
 
-- GitHub: [@Eltorretaz](https://github.com/Abrahm18)
+- GitHub: [@Abrahm18](https://github.com/Abrahm18)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Eltorretaz/Simple_Shopping_Cart_PHP_Mysql_armando_3feb2024/issues).
+Feel free to check the [issues page]().
 
 ## Show your support
 
