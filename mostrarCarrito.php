@@ -5,14 +5,14 @@ include 'templates/cabecera.php'
 ?>
 
 <br>
-<h3>Lista de carrito</h3>
+<h3>Cart List</h3>
 <?php if(!empty($_SESSION['CARRITO'])) {?>
 <table class="table table-light table-bordered">
   <tbody>
     <tr>
-      <th width="40%">Descripcion</th>
-      <th width="15%" class="text-center">cantidad</th>
-      <th width="20%" class="text-center">Precio</th>
+      <th width="40%">Description</th>
+      <th width="15%" class="text-center">amount</th>
+      <th width="20%" class="text-center">Price</th>
       <th width="20%" class="text-center">Total</th>
       <th width="5%">--</th>
     </tr>
@@ -37,7 +37,7 @@ include 'templates/cabecera.php'
         type="submit"
         name="btnAccion"
         value="Eliminar"
-        >Eliminar</button>
+        >Eliminate</button>
 
       </form>
       
@@ -56,7 +56,7 @@ include 'templates/cabecera.php'
           <form action="pagar.php" method="post">
             <div class="alert alert-success" role="alert">
               <div class="form-group">
-                  <label for="my-input">Correo de contacto:</label>
+                  <label for="my-input">Contact email:</label>
                   <input id="email" name="email" 
                   class="form-control" 
                   type="email"
@@ -65,12 +65,12 @@ include 'templates/cabecera.php'
               </div>
               <small id="emailHelp"
               class="form-text text-muted">
-                Los productos se enviaran a este correo
+              The products will be sent to this email
               </small>
 
             </div>
             <button class="btn btn-primary btn-lg btn-block" type="submit" value="preceder" name="btnAccion">
-              Proceder a pagar
+            Proceed to pay
             </button>
           </form>
         </td>
@@ -81,7 +81,7 @@ include 'templates/cabecera.php'
 </table>
 <?php }else {?>
   <div class="alert alert-success">
-    No hay productos en el carrito
+  There are no products in the cart
   </div>
   <?php }?>
 

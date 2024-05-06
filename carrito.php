@@ -5,28 +5,29 @@ $mensaje="";
 
 if(isset($_POST["btnAccion"])){
   switch($_POST["btnAccion"]){
-    case 'Agregar':
+    case 'Add':
 
       if(is_numeric( openssl_decrypt($_POST['id'],COD,KEY))){
         $ID=openssl_decrypt($_POST['id'],COD,KEY);
-        $mensaje.="ok ID correcto".$ID."<br/>";
+        $mensaje.="
+ok correct ID".$ID."<br/>";
       }else{
-        $mensaje.="Ups... ID Incorrecto".$ID."<br/>"; break;
+        $mensaje.=" Oops... Wrong ID".$ID."<br/>"; break;
       }
       if(is_string(openssl_decrypt($_POST['nombre'],COD,KEY))){
           $NOMBRE=openssl_decrypt($_POST['nombre'],COD,KEY);
           $mensaje.="Ok NOMBRE".$NOMBRE."<br/>";
-        }else{ $mensaje.="Upps... ID Incorrecto".$ID."<br/>";  break;}
+        }else{ $mensaje.="Oops... Wrong ID".$ID."<br/>";  break;}
 
         if(is_string(openssl_decrypt($_POST['cantidad'],COD,KEY))){
           $CANTIDAD=openssl_decrypt($_POST['cantidad'],COD,KEY);
           $mensaje.="Ok CANTIDAD".$CANTIDAD."<br/>";
-        }else{ $mensaje.="Upps... Algo pasa con la cantidad".$ID."<br/>";  break;}
+        }else{ $mensaje.="Oops... Something's wrong with the quantity".$ID."<br/>";  break;}
 
         if(is_string(openssl_decrypt($_POST['precio'],COD,KEY))){
           $PRECIO=openssl_decrypt($_POST['precio'],COD,KEY);
           $mensaje.="Ok precio".$PRECIO."<br/>";
-        }else{ $mensaje.="Upps... Algo pasa con el precio".$ID."<br/>";  break;}
+        }else{ $mensaje.="Oops... Something's up with the price".$ID."<br/>";  break;}
 
         if(!isset($_SESSION['CARRITO'])){
           $producto=array(
@@ -36,12 +37,12 @@ if(isset($_POST["btnAccion"])){
             'PRECIO'=>$PRECIO
           );
           $_SESSION['CARRITO'][0]=$producto;
-          $mensaje= "Producto agregado al carrito";
+          $mensaje= "Product added to cart";
         }else{
 
           $idProductos=array_column($_SESSION['CARRITO'],"ID");
           if(in_array($ID,$idProductos)) {
-            echo "<script>alert('El producto ya ha sido seleccionado..');</script>";
+            echo "<script>alert('The product has already been selected.');</script>";
             $mensaje= "";
           }else {
 
@@ -53,7 +54,7 @@ if(isset($_POST["btnAccion"])){
             'PRECIO'=>$PRECIO
           );
           $_SESSION['CARRITO'][$NumeroProductos]=$producto;
-          $mensaje= "Producto agregado al carrito";
+          $mensaje= "Product added to cart";
           }
         }
         // $mensaje=print_r($_SESSION, true)
@@ -66,13 +67,13 @@ if(isset($_POST["btnAccion"])){
         foreach($_SESSION['CARRITO'] as $indice=>$producto) {
           if($producto['ID']==$ID) {
             unset($_SESSION['CARRITO'][$indice]);
-            echo "<script>alert('Elemento borrado...');</script>";
+            echo "<script>alert('Deleted item...');</script>";
           }
 
 
         }
       }else{
-          $mensaje.="Ups... ID Incorrecto".$ID."<br/>"; break;
+          $mensaje.="Oops... Wrong ID".$ID."<br/>"; break;
       } 
       break;
   }

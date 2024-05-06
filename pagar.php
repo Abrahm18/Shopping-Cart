@@ -43,9 +43,9 @@ if($_POST) {
 }
 ?>
 <div class="jumbotron text-center">
-    <h1 class="display-4">¡Paso Final !</h1>
+    <h1 class="display-4">¡Final Step!</h1>
     <hr class="my-4">
-    <p class="lead"> Estas apunto de pagar con paypal la cantidad de: 
+    <p class="lead"> You are about to pay with Paypal the amount of:
         <h4><?php echo number_format($total,2);?>$</h4>
     </p>
     <!-- paypal -->

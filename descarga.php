@@ -19,7 +19,7 @@ include 'templates/cabecera.php'
             <img class="card-img-top" src="<?php echo $producto[ 'Imagen']; ?>">
             <div class="card-body">
                 <p class="card-text"><?php echo $producto['Nombre']; ?></p>
-                <button class="btn btn-success" type="button">Descargar</button>
+                <button class="btn btn-success" type="button">Discharge</button>
             </div>
         </div>
     </div>

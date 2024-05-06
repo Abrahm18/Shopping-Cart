@@ -6,13 +6,14 @@ include 'templates/cabecera.php';
 
 ?>
 
+
 <br>
 <?php if($mensaje!=""){?>
 <div class="alert alert-success" role="alert">
    <?php echo ($mensaje);?>
    
 
-    <a href="mostrarCarrito.php" class="btn btn-success">ver carrito</a>  
+    <a href="mostrarCarrito.php" class="btn btn-success">muy carrito</a>  
 </div>
 
 <?php }?>
@@ -38,7 +39,7 @@ include 'templates/cabecera.php';
         <div class="card-body">
             <span><?php echo $producto['Nombre'];?></span>
             <h5 class="card-title">$<?php echo $producto['Precio'];?></h5>
-            <p class="card-text">descripcion</p>
+            <p class="card-text">description</p>
 
 <form action="" method="post">
 
@@ -63,7 +64,6 @@ include 'templates/cabecera.php';
 
 </div>
 </div>
-
 
 <script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
