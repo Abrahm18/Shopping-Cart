@@ -14,21 +14,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="superior">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.php">Online game sales</a>
+        <a class="navbar-brand" href="index.php" style="font-size: 20px;">Online game sales</a>
         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php" style="font-size: 20px;">Home<span class="sr-only" style="font-size: 20px;">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   </li>
-                  <a class="nav-link disabled" href="mostrarCarrito.php" tabindex="-1" aria-disabled="true">Cart(<?php
+                  <a class="nav-link disabled" href="mostrarCarrito.php" tabindex="-1" aria-disabled="true" style="font-size: 20px;">Cart(<?php
                   echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO'])?>)</a>
             </ul>
         </div>
