@@ -34,12 +34,13 @@ include 'templates/cabecera.php';
           data-bs-trigger="hover" 
           data-bs-content="<?php echo $producto['Descripcion'];?>"
           height="317px"
+
         title="<?php echo $producto['Nombre'];?>"
         class="card-img-top" src="<?php echo $producto['Imagen'];?>" alt="<?php echo $producto['Nombre'];?>">
         <div class="card-body">
-            <span><?php echo $producto['Nombre'];?></span>
-            <h5 class="card-title">$<?php echo $producto['Precio'];?></h5>
-            <p class="card-text">description</p>
+            <span style="color:lightcyan"><?php echo $producto['Nombre'];?></span>
+            <h5 style="color:lightcyan" class="card-title">$<?php echo $producto['Precio'];?></h5>
+            <p style="color:lightcyan" class="card-text">description</p>
 
 <form action="" method="post">
 
@@ -48,7 +49,7 @@ include 'templates/cabecera.php';
 <input type="hidden" name="precio" id="precio" value="<?php echo openssl_encrypt($producto['Precio'],COD,KEY);?>">
 <input type="hidden" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt(1,COD,KEY);?>">
 
-<button class="btn btn-primary" 
+<button id="negro" class="btn btn-primary" 
             type="submit" 
             name="btnAccion" 
             value="Agregar" >Add to cart</button>
