@@ -1,4 +1,35 @@
-body{
-  background-color: bisque;
+.superior{
+  background-color: white;
+  background-image: url("fondo1234.jpg");
+  
+}
 
+#negro{
+
+  background-color: black;
+  
+}
+
+.letra {
+  font-size: 15px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(92, 91, 91);
+  text-align: center;
+}
+
+.card-body{
+
+  background-color: gray;
+}
+
+
+.row{
+  padding: 20px;
+  margin: 20px;
+}
+
+
+.col-3{
+  padding: 15px
 }
