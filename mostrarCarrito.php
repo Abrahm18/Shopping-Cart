@@ -60,7 +60,7 @@ include 'templates/cabecera.php'
                   <input id="email" name="email" 
                   class="form-control" 
                   type="email"
-                  placeholder="Pon aqui tu correo"
+                  placeholder="Put your email here"
                   required>
               </div>
               <small id="emailHelp"

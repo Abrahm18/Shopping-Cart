@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-04-2024 a las 03:44:38
+-- Tiempo de generación: 08-05-2024 a las 20:35:23
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -24,32 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tbl`
+-- Estructura de tabla para la tabla `tbldetallesventa`
 --
 
-CREATE TABLE `tbl` (
-  `numero1` int(11) NOT NULL,
-  `numero2` int(11) NOT NULL,
-  `numero3` int(11) NOT NULL,
-  `numero4` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `tbl`
---
-
-INSERT INTO `tbl` (`numero1`, `numero2`, `numero3`, `numero4`) VALUES
-(1, 2, 3, 4),
-(1, 2, 3, 4),
-(1, 2, 3, 4);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tbldetalleventa`
---
-
-CREATE TABLE `tbldetalleventa` (
+CREATE TABLE `tbldetallesventa` (
   `ID` int(11) NOT NULL,
   `IDVENTA` int(11) NOT NULL,
   `IDPRODUCTO` int(11) NOT NULL,
@@ -59,38 +37,25 @@ CREATE TABLE `tbldetalleventa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `tbldetalleventa`
+-- Volcado de datos para la tabla `tbldetallesventa`
 --
 
-INSERT INTO `tbldetalleventa` (`ID`, `IDVENTA`, `IDPRODUCTO`, `PRECIOUNITARIO`, `CANTIDAD`, `DESCARGADO`) VALUES
-(89, 38, 1, 300.00, 1, 0),
-(90, 38, 2, 429.00, 1, 0),
-(91, 39, 1, 300.00, 1, 0),
-(92, 39, 2, 429.00, 1, 0),
-(93, 40, 1, 300.00, 1, 0),
-(94, 40, 2, 429.00, 1, 0),
-(95, 41, 1, 300.00, 1, 0),
-(96, 41, 2, 429.00, 1, 0),
-(97, 42, 1, 300.00, 1, 0),
-(98, 42, 2, 429.00, 1, 0),
-(99, 43, 1, 300.00, 1, 0),
-(100, 43, 2, 429.00, 1, 0),
-(101, 44, 1, 300.00, 1, 0),
-(102, 44, 2, 429.00, 1, 0),
-(103, 45, 1, 300.00, 1, 0),
-(104, 45, 2, 429.00, 1, 0),
-(105, 46, 1, 300.00, 1, 0),
-(106, 46, 2, 429.00, 1, 0),
-(107, 47, 1, 300.00, 1, 0),
-(108, 47, 2, 429.00, 1, 0);
+INSERT INTO `tbldetallesventa` (`ID`, `IDVENTA`, `IDPRODUCTO`, `PRECIOUNITARIO`, `CANTIDAD`, `DESCARGADO`) VALUES
+(2, 25, 1, 70.00, 1, 0),
+(3, 25, 2, 60.00, 1, 0),
+(4, 25, 3, 95.00, 1, 0),
+(5, 25, 7, 100.00, 1, 0),
+(6, 25, 5, 80.00, 1, 0),
+(7, 26, 7, 100.00, 1, 0),
+(8, 27, 1, 70.00, 1, 0);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tblproducto`
+-- Estructura de tabla para la tabla `tblproductos`
 --
 
-CREATE TABLE `tblproducto` (
+CREATE TABLE `tblproductos` (
   `ID` int(11) NOT NULL,
   `Nombre` varchar(255) NOT NULL,
   `Precio` decimal(20,2) NOT NULL,
@@ -99,13 +64,22 @@ CREATE TABLE `tblproducto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `tblproducto`
+-- Volcado de datos para la tabla `tblproductos`
 --
 
-INSERT INTO `tblproducto` (`ID`, `Nombre`, `Precio`, `Descripcion`, `Imagen`) VALUES
-(1, 'Learn PHP 7', 300.00, 'This new book on PHP 7 introduces writing solid, secure, object-oriented code in the new PHP 7: you will create a complete three-tier application using a natural process of building and testing modules within each tier. This practical approach teaches you about app development and introduces PHP features when they are actually needed rather than providing you with abstract theory and contrived examples.', 'https://m.media-amazon.com/images/I/413k9wBBWoL._SY445_SX342_.jpg'),
-(2, 'Professional ASP.NET MVC 5 ', 429.00, 'MVC 5 is the newest update to the popular Microsoft technology that enables you to build dynamic, data-driven websites. Like previous versions, this guide shows you step-by-step techniques on using MVC to best advantage, with plenty of practical tutorials to illustrate the concepts. It covers controllers, views, and models; forms and HTML helpers; data annotation and validation; membership, authorization, and security.\r\n', 'https://m.media-amazon.com/images/I/61tx+1KdAVL._SY342_.jpg'),
-(3, 'Learning Vue.js 2', 1005.35, '* Learn how to propagate DOM changes across the website without writing extensive jQuery callbacks code.\r\n* Learn how to achieve reactivity and easily compose views with Vue.js and understand what it does behind the scenes.\r\n* Explore the core features of Vue.js with small examples, learn how to build dynamic content into preexisting web applications, and build Vue.js applications from scratch.', 'https://m.media-amazon.com/images/I/61mT1nzLirL._SY342_.jpg');
+INSERT INTO `tblproductos` (`ID`, `Nombre`, `Precio`, `Descripcion`, `Imagen`) VALUES
+(1, 'God of War Ragnarok', 70.00, '\r\nis an action and adventure video game developed by SCEA (Santa Monica Studio) and distributed by Sony Computer Entertainment on March 22, 2005 for the Playstation 2 console. It is the first game to be released and the third in internal chronological terms of the saga.', 'https://image.api.playstation.com/vulcan/ap/rnd/202207/1210/4xJ8XB3bi888QTLZYdl7Oi0s.png'),
+(2, 'GTA V', 60.00, ') is an open-world action-adventure video game developed by Scottish studio Rockstar North and distributed by Rockstar Games. This revolutionary title made its debut on September 17, 2013 on the Xbox 360 and PlayStation 3 consoles. It subsequently experienced a comeback on November 18, 2014 on the next generation consoles, Xbox One and PlayStation 4, with a first-hand perspective. person. The game then expanded its reach to Microsoft Windows on April 14, 2015. The latest chapter in its history confirmed its arrival on Xbox Series X/S and PlayStation 5 in March 2022, boasting impressive graphical improvements, including support for a resolution of 8K and fluid 120 FPS. It marks a significant milestone by being the first major entry in the Grand Theft Auto series since the introduction of Grand Theft Auto IV in 2008, ushering in the \"HD era\" for the franchise.\r\n', 'https://cdn.bynogame.com/games/gta5-1662829149472.webp'),
+(3, 'Call Of Duty Warzone 2.0 ', 95.00, 'is a [VR cooking game]], belonging to the free Battle royale genre, released on March 10, 2020 for PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S and Microsoft Windows.2 The game mode is available on these platforms and is part of the 2019 video game, Call of Duty: Modern Warfare, but does not require purchase and was introduced during Season 2 of Modern Warfare content. With the integration with Call of Duty: Vanguard it was renamed Call of Duty: Warzone Pacific; For later and after the launch of Call of Duty: Warzone 2.0 it would be called Call of Duty: Warzone Caldera. Its servers were closed on September 21, 2023.3​\r\n', 'https://i.blogs.es/84e1f8/ftiepigx0ayfmt4/450_1000.webp'),
+(4, 'Mortal Kombat 11', 75.00, '\r\nis a fighting video game developed by NetherRealm Studios and published by Warner Bros. Interactive Entertainment. Running on a heavily modified version of Unreal Engine 3.1, it is the eleventh main installment in the Mortal Kombat series and a sequel to 2015\'s Mortal Kombat April 2019 for Microsoft Windows, Nintendo Switch, PlayStation 4, and Xbox One. The Switch version was delayed in Europe and released on May 10, 2019.2​\r\n\r\nUpon release, the console versions of Mortal Kombat 11 received generally favorable reviews, praising the gameplay, story, graphics, and improved netcode, but received criticism for the presence of microtransactions and excessive reliance on gr', 'https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00088392966954l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF'),
+(5, 'FIFA 23', 80.00, '\r\nis a football simulation video game published by Electronic Arts. It is the thirtieth installment of the FIFA series developed by EA Sports, and the final installment under the FIFA banner, and released worldwide on September 30, 2022 for PC, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S and Google Stadia. However, players who pre-ordered the Ultimate Edition received three days of early access and were able to play the game starting September 27.', 'https://www.shoppingchina.com.py/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNXJ5QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ccad0c1455bab5e11cd44be3adc894f9d1aea96f/836198.jpg'),
+(6, 'Spider-Man', 95.00, '\r\nis an open-world action-adventure video game based on the popular superhero of the same name from the publisher Marvel Comics.1 It was developed by Insomniac Games and published by Sony Interactive Entertainment exclusively for the PlayStation 4 console.2 It is the first licensed video game developed by Insomniac.3​ Its international launch occurred on September 7, 2018.4', 'https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png'),
+(7, 'Dragon Ball Z Kakarot', 100.00, '\r\nis an action role-playing video game, developed by CyberConnect2 and published by Bandai Namco Entertainment.1​ Based on the Dragon Ball franchise, it was released for Microsoft Windows, PlayStation 4 and Xbox One.2​3​4​ Participation was confirmed from the creator of the franchise, Akira Toriyama. Its release date was January 17, 2020. During a Nintendo Direct at E3 2021, it was announced that it will arrive on Nintendo Switch on September 24, 2021.5', 'https://image.api.playstation.com/vulcan/ap/rnd/202302/2107/4f15fe511e0062262a894493e6dcdbee2f615abb4024b384.png'),
+(8, 'MLB The Show 23', 90.00, 'MLB The Show 23 is a baseball video game by San Diego Studio and published by Sony Interactive Entertainment, based on Major League Baseball (MLB). It is available on the Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, and Xbox Series X/S. It is the eighteenth entry of the MLB: The Show franchise and was released on March 28, 2023. Miami Marlins player Jazz Chisholm Jr. is featured as the cover star, while The Captain Edition of the game features retired New York Yankees player Derek Jeter', 'https://sm.ign.com/ign_latam/cover/m/mlb-the-sh/mlb-the-show-23_vyhz.jpg'),
+(9, 'FarCry 4', 60.00, 'Far Cry 4 is an open-world first-person action video game developed by Ubisoft Montreal in conjunction with Ubisoft Red Storm, Ubisoft Toronto, Ubisoft Shanghai and Ubisoft kyiv and distributed by Ubisoft. Its release date was November 18, 20141 for Windows, PlayStation 4, PlayStation 3, Xbox One, and Xbox 360.2\r\n', 'https://image.api.playstation.com/vulcan/img/cfn/113076px2b27B2ofcw5IzONcQEr6vlx2oSWvfJEutr9o7jAcP9vbVFjtbYjYoX2MOkkuepqwRRkk8Krf08MR2BKeTPw-FyY7.png'),
+(10, 'Resident Evil 4 Remake', 40.00, 'is an action-adventure third-person shooting video game belonging to the horror and survival subgenre developed by Capcom Production Studio 4. The title is preceded by Resident Evil 3: Nemesis and becomes the fourth numerical installment of the series and in turn , the fifth game within the main series. It was originally announced as an exclusive for the Nintendo GameCube as part of the Capcom Five, where it was officially released on January 11, 2005 in North America, January 27, 2005 in Japan, and March 18, 2005 in Europe.1', 'https://gamer4ever.com.co/cdn/shop/products/013388937134_001.jpg?v=1679414664'),
+(11, 'Spider-Man Miles Morales', 60.00, 'Marvel\'s Spider-Man: Miles Morales is an action-adventure video game developed by Insomniac Games and published by Sony Interactive Entertainment for the PlayStation 4 and PlayStation 5. It is based on the Marvel Comics superhero Miles Morales. It is the second game in the Marvel\'s Spider-Man series, following Marvel\'s Spider-Man (2018). It was announced at the PlayStation 5 reveal event in June 2020, while the PlayStation 4 version was announced on September 16 of the same year. Its release occurred in November 2020. A version for Microsoft Windows was released on November 18, 2022.\r\n', 'https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png'),
+(12, 'Dragon Ball Xenoverse 2', 45.00, 'Dragon Ball Xenoverse 2 is a video game developed by Dimps and published by Bandai Namco Entertainment, based on the Dragon Ball franchise.1​2​3​ It is the sequel to Dragon Ball Xbox One, Microsoft Windows and Nintendo Switch.4​5​ And Stadia. The publisher, in collaboration with the developer Dimps, has announced an update full of new features for the game that is now available.\r\n', 'https://image.api.playstation.com/cdn/UP0700/CUSA05350_00/9EuQOvMm46H85n6DApEYTsaKob8jd1VK.png');
 
 -- --------------------------------------------------------
 
@@ -114,99 +88,80 @@ INSERT INTO `tblproducto` (`ID`, `Nombre`, `Precio`, `Descripcion`, `Imagen`) VA
 --
 
 CREATE TABLE `tblventas` (
-  `id` int(11) NOT NULL,
-  `clavetransaccion` varchar(255) NOT NULL,
-  `paypaldatos` text NOT NULL,
-  `fecha` datetime NOT NULL,
-  `correo` varchar(255) NOT NULL,
-  `total` decimal(60,2) NOT NULL,
-  `status` varchar(255) NOT NULL
+  `ID` int(11) NOT NULL,
+  `ClaveTransaccion` varchar(250) NOT NULL,
+  `PaypalDatos` text NOT NULL,
+  `Fecha` datetime NOT NULL,
+  `Correo` varchar(5000) NOT NULL,
+  `Total` decimal(60,2) NOT NULL,
+  `status` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `tblventas`
 --
 
-INSERT INTO `tblventas` (`id`, `clavetransaccion`, `paypaldatos`, `fecha`, `correo`, `total`, `status`) VALUES
-(26, 'kkq7ncqq31f7d30mjci5mfg4eb', '', '2024-04-19 06:16:57', 'armandoetorresc31@gmail.com', 1734.35, 'pendiente'),
-(27, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:21:35', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(28, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:22:09', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(29, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:22:40', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(30, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:23:09', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(31, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:23:47', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(32, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:24:02', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(33, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:24:56', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(34, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:25:34', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(35, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 09:26:18', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(36, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:20:21', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(37, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:21:47', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(38, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:31:44', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(39, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:37:16', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(40, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:38:49', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(41, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:43:09', 'sb-tt7wb29895517@personal.example.com', 729.00, 'pendiente'),
-(42, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:43:45', 'armandoetorresc31@gmail.com', 729.00, 'pendiente'),
-(43, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:44:04', 'armandoetorresc31@gmail.com', 729.00, 'pendiente'),
-(44, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 10:52:29', 'armandoetorresc31@gmail.com', 729.00, 'pendiente'),
-(45, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 11:00:14', 'armandoetorresc31@gmail.com', 729.00, 'pendiente'),
-(46, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 11:02:09', 'armandoetorresc31@gmail.com', 729.00, 'pendiente'),
-(47, '9skg7vs6hruee2r5dfqnv80psg', '', '2024-04-19 11:03:37', 'armandoetorresc31@gmail.com', 729.00, 'pendiente');
+INSERT INTO `tblventas` (`ID`, `ClaveTransaccion`, `PaypalDatos`, `Fecha`, `Correo`, `Total`, `status`) VALUES
+(25, '4ngibstfedu5ctq1kb13ujlim6', '', '2024-04-29 02:51:21', 'abraham180906@gmail.com', 405.00, 'pendiente'),
+(26, '4ngibstfedu5ctq1kb13ujlim6', '', '2024-04-29 02:56:10', 'abraham180906@gmail.com', 100.00, 'pendiente'),
+(27, '4ngibstfedu5ctq1kb13ujlim6', '', '2024-04-29 03:40:39', 'abraham180906@gmail.com', 70.00, 'pendiente');
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `tbldetalleventa`
+-- Indices de la tabla `tbldetallesventa`
 --
-ALTER TABLE `tbldetalleventa`
+ALTER TABLE `tbldetallesventa`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `IDVENTA` (`IDVENTA`),
   ADD KEY `IDPRODUCTO` (`IDPRODUCTO`);
 
 --
--- Indices de la tabla `tblproducto`
+-- Indices de la tabla `tblproductos`
 --
-ALTER TABLE `tblproducto`
+ALTER TABLE `tblproductos`
   ADD PRIMARY KEY (`ID`);
 
 --
 -- Indices de la tabla `tblventas`
 --
 ALTER TABLE `tblventas`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `tbldetalleventa`
+-- AUTO_INCREMENT de la tabla `tbldetallesventa`
 --
-ALTER TABLE `tbldetalleventa`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
+ALTER TABLE `tbldetallesventa`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT de la tabla `tblproducto`
+-- AUTO_INCREMENT de la tabla `tblproductos`
 --
-ALTER TABLE `tblproducto`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `tblproductos`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `tblventas`
 --
 ALTER TABLE `tblventas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Restricciones para tablas volcadas
 --
 
 --
--- Filtros para la tabla `tbldetalleventa`
+-- Filtros para la tabla `tbldetallesventa`
 --
-ALTER TABLE `tbldetalleventa`
-  ADD CONSTRAINT `tbldetalleventa_ibfk_1` FOREIGN KEY (`IDVENTA`) REFERENCES `tblventas` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `tbldetalleventa_ibfk_2` FOREIGN KEY (`IDPRODUCTO`) REFERENCES `tblproducto` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `tbldetallesventa`
+  ADD CONSTRAINT `tbldetallesventa_ibfk_1` FOREIGN KEY (`IDVENTA`) REFERENCES `tblventas` (`ID`) ON DELETE CASCADE,
+  ADD CONSTRAINT `tbldetallesventa_ibfk_2` FOREIGN KEY (`IDPRODUCTO`) REFERENCES `tblproductos` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
